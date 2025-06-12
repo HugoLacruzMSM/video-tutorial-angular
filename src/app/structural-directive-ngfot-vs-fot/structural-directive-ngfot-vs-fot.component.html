@@ -1,0 +1,30 @@
+<div>
+  <h3> ngFor and for</h3>
+
+  <div>
+    <select>
+      <!--      <option *ngFor="let emp of employees" [value]="emp.empNumber">-->
+      <!--        {{ emp.empName }} - {{ emp.empEmail }}-->
+      <!--      </option>-->
+      @for (emp of employees; track emp) {
+        <option [value]="emp.empNumber">{{ emp.empName }} - {{ emp.empEmail }}</option>
+
+      }
+    </select>
+
+    <div>
+      @for (emp of employees; track emp; let f = $first, l = $last, e = $even, o = $odd, c = $count, i = $index) {
+        <p>------------------------</p>
+        {{ emp.empName }}
+        <p>{{ f }}-first</p>
+        <p>{{ l }}- last</p>
+        <p>{{ c }}- count</p>
+        <p>{{ e }}- even</p>
+        <p>{{ i }}- index</p>
+        <p>{{ o }}- odd</p>
+
+      }
+    </div>
+
+  </div>
+</div>

@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 import {
-  StructuralDirectiveNgifVsIfComponent
-} from './structural-directive-ngif-vs-if/structural-directive-ngif-vs-if.component';
+  StructuralDirectiveNgfotVsFotComponent
+} from './structural-directive-ngfot-vs-fot/structural-directive-ngfot-vs-fot.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, StructuralDirectiveNgifVsIfComponent],
+  imports: [RouterOutlet, StructuralDirectiveNgfotVsFotComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
