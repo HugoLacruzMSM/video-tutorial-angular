@@ -1,0 +1,39 @@
+<div>
+  <h1>Example of ngif vs if</h1>
+  <p>----show----</p>
+
+  <div (click)="onClick()">
+    <input type="checkbox"> Tearms and condition
+  </div>
+  <!--  <div *ngIf="isChecked">-->
+  <!--    <button>Submit</button>-->
+  <!--  </div>-->
+  @if (isChecked) {
+    <button>Submit</button>
+  }
+  <div>
+    <p>----show and hide----</p>
+    @if (isInputBox) {
+      <input type="text" value="hugo">
+
+    }
+    <button (click)="showField()">Show</button>
+    <button (click)="hideField()">Hide</button>
+  </div>
+
+  <div>
+    <p>----show and hide----</p>
+    <div>
+      <input [(ngModel)]="input1" type="text">
+      <input [(ngModel)]="input2" type="text">
+    </div>
+    @if (input1 == input2) {
+      <p>Both values are equal</p>
+
+    } @else if (input1 !== input2) {
+      <p>Both values are not equal</p>
+
+    }
+  </div>
+</div>
+
