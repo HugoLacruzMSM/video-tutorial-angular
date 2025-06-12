@@ -1,0 +1,31 @@
+<div>
+  <h1>ngSwitch vs switch</h1>
+
+  <div>
+    <p>----------------------</p>
+    <button (click)="set(1)" mat-button>1 Grade</button>
+    <button (click)="set(2)" mat-button>2 Grade</button>
+    <button (click)="set(3)" mat-button>3 Grade</button>
+  </div>
+  <div [ngSwitch]="grade">
+    <div *ngSwitchCase="1">first class</div>
+    <div *ngSwitchCase="2">second class</div>
+    <div *ngSwitchCase="3">third class</div>
+  </div>
+  
+  @switch (grade) {
+    @case (1) {
+      <h1>1 class</h1>
+    }
+    @case (2) {
+      <h2>1 class</h2>
+    }
+    @case (3) {
+      <h3>3 class</h3>
+    }
+    @default {
+      <p> NOT FOUND RESULT</p>
+    }
+  }
+
+</div>

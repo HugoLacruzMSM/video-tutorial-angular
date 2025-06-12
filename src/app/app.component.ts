@@ -1,12 +1,10 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {
-  StructuralDirectiveNgfotVsFotComponent
-} from './structural-directive-ngfot-vs-fot/structural-directive-ngfot-vs-fot.component';
+import {SignalsComponent} from './signals/signals.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, StructuralDirectiveNgfotVsFotComponent],
+  imports: [RouterOutlet, SignalsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
